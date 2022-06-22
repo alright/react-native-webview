@@ -405,7 +405,7 @@ RCTAutoInsetsProtocol>
   return wkWebViewConfig;
 }
 
-- (void)initWebView
+- (void)didMoveToSuperview
 {
   if (_webView == nil) {
     WKWebViewConfiguration *wkWebViewConfig = [self setUpWkWebViewConfig];
